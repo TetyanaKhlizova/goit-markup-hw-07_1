@@ -42,6 +42,9 @@
 .social-list__item {
   height: 44px;
   width: 44px;
+  & + & {
+    margin-left: 10px;
+  }
 }
 .social-list__link {
   color: var(--social-icon-color);
@@ -73,9 +76,7 @@
   display: flex;
   justify-content: center;
 }
-.social-list__item + .social-list__item {
-  margin-left: 10px;
-}
+
 .social-list__icon {
   width: 20px;
   height: 20px;

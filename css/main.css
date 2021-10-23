@@ -210,19 +210,20 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contact-header-link__icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-}
-
-.contact-header-link__icon-envelope,
-.contact-header-link__icon-smartphone {
   fill: currentColor;
 }
 
+/*.contact-header-link__icon-envelope,
+.contact-header-link__icon-smartphone {
+  fill: currentColor;
+}*/
 /*main studio section*/
 .hero {
   display: flex;
@@ -404,6 +405,10 @@ img {
   width: 44px;
 }
 
+.social-list__item + .social-list__item {
+  margin-left: 10px;
+}
+
 .social-list__link {
   color: var(--social-icon-color);
   height: 100%;
@@ -431,10 +436,6 @@ img {
 .team-social {
   display: flex;
   justify-content: center;
-}
-
-.social-list__item + .social-list__item {
-  margin-left: 10px;
 }
 
 .social-list__icon {

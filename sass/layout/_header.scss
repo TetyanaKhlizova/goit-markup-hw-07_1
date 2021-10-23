@@ -101,14 +101,16 @@
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contact-header-link__icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-}
-.contact-header-link__icon-envelope,
-.contact-header-link__icon-smartphone {
   fill: currentColor;
 }
+/*.contact-header-link__icon-envelope,
+.contact-header-link__icon-smartphone {
+  fill: currentColor;
+}*/
