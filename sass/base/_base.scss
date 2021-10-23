@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--title-color);
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* transitions for btn-hover*/
+.hero-btn,
+.btn-active,
+.subscribe-btn {
+  transition: color var(--trans-duration) var(--transit-tim-function),
+    background-color var(--trans-duration) var(--transit-tim-function),
+    box-shadow var(--trans-duration) var(--transit-tim-function);
+}
