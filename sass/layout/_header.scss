@@ -17,11 +17,10 @@
 .logo-header__studio {
   color: var(--logo-header-color);
   transition: color var(--trans-duration) var(--transit-tim-function);
-}
-
-.logo-header__studio:hover,
-.logo-header__studio:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .navi__active,
@@ -66,11 +65,12 @@
 }
 .contact-header-link {
   color: var(--secondary-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.contact-header-link:hover,
-.contact-header-link:focus {
-  color: var(--accent-color);
-}
+
 .header-container {
   display: flex;
   align-items: center;

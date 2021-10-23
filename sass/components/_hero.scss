@@ -29,32 +29,16 @@
   text-transform: uppercase;
   color: var(--title-color);
 }
-.btn {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  min-width: 200px;
-}
 
 .hero-btn {
   padding: 10px 32px;
   display: inline-block;
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color);
+  }
 }
 .hero__container {
   max-width: 696px;
   text-align: center;
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--btn-color);
 }

@@ -51,11 +51,10 @@
   height: 18px;
   fill: var(--logo-header-color);
   transition: fill var(--trans-duration) var(--transit-tim-function);
-}
-
-.modal__close-btn:hover .modal__close-btn_svg,
-.modal__close-btn:focus .modal__close-btn_svg {
-  fill: var(--accent-color);
+  .modal__close-btn:hover &,
+  .modal__close-btn:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal__title {
@@ -76,6 +75,9 @@
   padding-left: 42px;
   padding-right: 20px;
   transition: border-color var(--trans-duration) var(--transit-tim-function);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 .modal-field__comment,
 .modal-field__label,
@@ -93,7 +95,6 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-field__input:focus,
 .modal-field__comment:focus {
   border-color: var(--accent-color);
 }
@@ -184,9 +185,9 @@
   margin: 0 auto;
   transition: background-color var(--trans-duration) var(--transit-tim-function),
     box-shadow var(--trans-duration) var(--transit-tim-function);
-}
-.checkbox__btn:hover,
-.checkbox__btn:focus {
-  background-color: var(--btn-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }

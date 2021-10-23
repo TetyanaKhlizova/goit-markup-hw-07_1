@@ -16,6 +16,12 @@
   padding: 6px 22px;
   display: inline-block;
   min-width: 73px;
+  &:hover,
+  &:focus {
+    color: var(--title-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--btn-shadow-porfolio);
+  }
 }
 /*.btn-all {
   min-width: 73px;
@@ -32,15 +38,11 @@
   min-width: 130px;
 }*/
 
-.portfolio-btn-list__active:hover,
-.portfolio-btn-list__active:focus {
-  color: var(--title-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--btn-shadow-porfolio);
-}
-.portfolio-btn-list .btn-all.current {
-  color: var(--title-color);
-  background-color: var(--accent-color);
+.portfolio-btn-list {
+  .btn-all.current {
+    color: var(--title-color);
+    background-color: var(--accent-color);
+  }
 }
 .portfolio-btn-list {
   display: flex;
@@ -68,6 +70,10 @@
   text-decoration: none;
   display: inline-block;
   transition: box-shadow var(--trans-duration) var(--transit-tim-function);
+  &:hover,
+  &:focus {
+    box-shadow: var(--box-shadow-portfolio);
+  }
 }
 
 .portfolio-link__type {
@@ -84,26 +90,20 @@
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
-.portfolio-list > .portfolio-item {
-  display: flex;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+.portfolio-list {
+  .portfolio-item {
+    display: flex;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+  }
 }
 .portfolio-link__thumb {
   padding: 20px 24px;
   border: 1px solid var(--border-portfolio-card);
   border-top: none;
 }
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: var(--box-shadow-portfolio);
-}
 
-.portfolio-link:hover .portfolio-link__text,
-.portfolio-link:focus .portfolio-link__text {
-  transform: translateY(0);
-}
 .portfolio-link__card-wrapper {
   position: relative;
   overflow: hidden;
@@ -123,4 +123,8 @@
   margin: 0;
   padding: 63px 24px;
   height: 100%;
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(0);
+  }
 }

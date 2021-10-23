@@ -19,9 +19,11 @@
   display: flex;
   margin-right: calc(-1 * var(--card-set-gap));
 }
-.activity-set > .activity-set__item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-right: var(--card-set-gap);
+.activity-set {
+  .activity-set__item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-right: var(--card-set-gap);
+  }
 }
 .activity-set__wrapper {
   position: relative;
