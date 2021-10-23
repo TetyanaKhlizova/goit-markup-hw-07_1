@@ -848,7 +848,6 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-field__comment,
 .modal-field__label,
 .modal-field__input {
   font-size: 12px;
@@ -857,19 +856,19 @@ img {
   color: var(--secondary-color);
 }
 
-.modal-field__comment::placeholder {
+.modal-field__comment {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  color: var(--secondary-color);
+}
+
+.modal-field__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-field__comment:focus {
   border-color: var(--accent-color);
-}
-
-.modal-field__input:focus + .modal-field__icon {
-  fill: var(--accent-color);
 }
 
 .modal-field__label {
@@ -911,6 +910,10 @@ img {
   top: 50%;
   transform: translateY(-50%);
   transition: fill var(--trans-duration) var(--transit-tim-function);
+}
+
+.modal-field__input:focus + .modal-field__icon {
+  fill: var(--accent-color);
 }
 
 .checkbox {
